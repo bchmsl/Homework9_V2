@@ -21,6 +21,13 @@ class UsersActivity : AppCompatActivity() {
     override fun onRestart() {
         super.onRestart()
         adapter.setData(newUsersList)
+
+
+
+        adapter.notifyDataSetChanged() // ამის გარეშე ლისტს ანახლებდა edit-ის შემდეგ, მაგრამ ui-ს არა და ვერაფრით გავასწორე....
+
+
+
         d("TAG", "onRestart: $newUsersList")
     }
 

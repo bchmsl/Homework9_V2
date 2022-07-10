@@ -7,7 +7,7 @@ import com.bchmsl.homework9v2.databinding.ActivityUserBinding
 
 class UserActivity : AppCompatActivity() {
     private lateinit var binding: ActivityUserBinding
-    private lateinit var user : User
+    private lateinit var user: User
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityUserBinding.inflate(layoutInflater)
@@ -48,7 +48,7 @@ class UserActivity : AppCompatActivity() {
     private fun addItem() {
         binding.btnSave.setOnClickListener {
             val newUser = User(
-                usersList.size,
+                usersList[usersList.lastIndex].id + 1,
                 binding.etFirstName.text.toString(),
                 binding.etLastName.text.toString()
             )
