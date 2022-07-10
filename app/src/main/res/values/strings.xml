@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Homework9 V2</string>
+    <string name="android_users">Android Users:</string>
+    <string name="first_name">First name:</string>
+    <string name="last_name">Last name:</string>
+    <string name="email">Email:</string>
+    <string name="save">Save</string>
+</resources>
