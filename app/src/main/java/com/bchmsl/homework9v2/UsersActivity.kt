@@ -64,8 +64,8 @@ class UsersActivity : AppCompatActivity() {
     }
 
     private fun removeItem(position: Int, item: User) {
-        val newList = usersList.toMutableList()
-        newList.remove(item)
-        adapter.setData(newList)
+        newUsersList = usersList.toMutableList()
+        newUsersList.remove(item)
+        adapter.setData(newUsersList)
     }
 }
